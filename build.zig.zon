@@ -1,0 +1,25 @@
+.{
+    .name = .compositor,
+    .version = "0.0.1",
+    .dependencies = .{
+        .wayland = .{
+            .url = "git+https://codeberg.org/ifreund/zig-wayland#94db7ba4e0a6b4780a16dbc74c7a2c88f1ebf502",
+            .hash = "wayland-0.8.0-dev-lQa1kuf8AQCeoam8G-XPyaIYvIOk3_wgsspwi4nT_L5q",
+        },
+        .wlroots = .{
+            .url = "git+https://codeberg.org/ifreund/zig-wlroots#4256e9dee05c6ef55ece6e0dbc3a0d6d5607820a",
+            .hash = "wlroots-0.20.4-dev-jmOlcsx0BACzEheO0YIIQ5NyvyJih6MpB2pi6mCUOJnJ",
+        },
+        .pixman = .{
+            .url = "git+https://codeberg.org/ifreund/zig-pixman#778b5ed1abe06b73d55800afca920358004c7a94",
+            .hash = "pixman-0.5.0-dev-LClMn_uWAAAlI0Bl2Ff18p9-TKWdAjw1SEcXjuriG9I9",
+        },
+        .xkbcommon = .{
+            .url = "git+https://codeberg.org/ifreund/zig-xkbcommon#da67d0907995aed2407bac9a9dfe863772cbe5ae",
+            .hash = "xkbcommon-0.6.0-dev-VDqIe9C3AgAY8LqhHADN7ORxotv3JAs9XDAViP9EBT5k",
+        },
+    },
+    .minimum_zig_version = "0.17.0",
+    .paths = .{""},
+    .fingerprint = 0xf36ec4dc953dd4f7,
+}
