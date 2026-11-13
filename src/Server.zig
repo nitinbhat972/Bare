@@ -51,6 +51,8 @@ pub fn init(self: *Server) !void {
 
     try self.renderer.initServer(server);
     _ = try wlr.Compositor.create(server, 6, renderer);
+    _ = try wlr.Subcompositor.create(self.wl_server);
+    _ = try wlr.DataDeviceManager.create(self.wl_server);
 
     self.backend.events.new_output.add(&self.on_output_add);
     self.toplevels.init();
